@@ -1,0 +1,30 @@
+h3 {
+    color: orange;
+}
+/* id dùng # */
+#title {
+    background-color: aqua;
+}
+/* class dùng . */
+.bg {
+    background-color: blue;
+}
+p {
+    color: red;
+    background-color: blueviolet;
+}
+.box1 {
+    background-color:rebeccapurple ;
+}
+.box2 {
+    background-color:violet ;
+    /* margin:50px 100px; */
+    /* truyền 1 giá trị : cách xung quang
+    truyền 2 giá trị: cách (trên dưới) , 2(trái phải) */
+    width: 50%;
+    /* margin auto căn khối ra giữa */
+    margin: 5opx auto;
+}
+.box3 {
+    background-color:green ;
+}
