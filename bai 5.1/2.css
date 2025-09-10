@@ -95,6 +95,8 @@ main h1 {
 .baiviet p {
     font-size: 14px;
     margin: 8px 0;
+    position: relative;
+    bottom: 0;
 }
 
 .time {
