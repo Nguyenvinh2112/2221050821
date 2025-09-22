@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <script>
+        // để khai báo biến dùng let or var
+        // cú pháp : let + tên biến = giá trị
+        // để nối chuỗi dùng dấu +
+        document.writeln("Hello wrold" + "<br>")
+        let FullName = "Nguyen Vinh" + "<br>";
+        document.writeln(FullName);
+        // const a = 1;
+        // const b = 3;
+        // const result = a + b;
+        // ++ tăng lên một đơn vị
+        // document.writeln( "a + b = "  + result + "<br>")
+        // document.writeln( "a - b = "  + (a - b)+ "<br>")
+        // document.writeln( "a * b = "  + (a * b)+ "<br>")
+        // document.writeln( "a / b = "  + (a / b)+ "<br>")
+        // let x = 10;
+        // let y = 5;
+        // document.writeln((x =- y) + "<br>")
+        // document.writeln((x *= y) + "<br>")  
+        // document.writeln((a == b) + "<br>")  
+        // document.writeln((a != b) + "<br>")
+        // document.writeln((a === b) + "<br>")
+        // so sánh giá trị và biến
+        // document.writeln((a < b) + "<br>")
+        // document.writeln((a > b) + "<br>")
+        // document.writeln((a >= b) + "<br>")
+        // kiểu dữ liệu object
+        let thongTinSinhVien = {
+            hoTen: "Nguyễn Đức Vinh",
+            tuoi: 20,
+            gioiTinh: "Nam",
+            lop: "DCCTCT67_06A",
+            diaChi: "Nam Định"
+        };
+        // let GroupNameFriend = {
+        //     Name : " Việt Đặng Kim",
+        //     Age : 22,
+        //     sex : none,
+        //     Class : DCCTCT66_04A,
+        //     Adress : {
+        //        city : "Hà Nội",
+        //        street : "Lê Văn Hiến",
+        //        homeNumber : 22
+        //     }
+        // }
+        let noiSinh = {
+            thanhPho: "Ninh Bình",
+            xa: "Quang Hưng",
+        }
+
+        thongTinSinhVien.diaChi = noiSinh;
+        document.writeln(
+            "Tên " 
+            + thongTinSinhVien.hoTen 
+            +" "
+            + thongTinSinhVien.tuoi 
+            +" tuổi " 
+            + "Xã "
+            + thongTinSinhVien.diaChi.xa
+            +"<br>"
+        );
+        let namNay = 2025;
+        document.writeln("Ban "+ thongTinSinhVien.hoTen +" Sinh năm: " + (namNay - thongTinSinhVien.tuoi));
+        
+    </script>
+</body>
+
+</html>
