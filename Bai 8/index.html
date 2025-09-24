@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: '128784j1n2',
+            khachHang: {
+                hoTen: "Khách Hàng",
+                soDienThoai: "0123434344",
+                trangThaiThanThiet: true,
+            },
+            sanPham1: {
+                maSanPham: '8473h243',
+                tenSanPham: "Cà phê",
+                soLuong: 32,
+                giaTien: 200,
+            },
+            sanPham2: {
+                maSanPham: "8473243",
+                tenSanPham: "matcha",
+                soLuong: 32,
+                giaTien: 300,
+            },
+            sanPham3: {
+                maSanPham: "847343",
+                tenSanPham: "Tra sửa",
+                soLuong: 32,
+                giaTien: 400,
+            },
+            trangThaiTHanhToan: true,
+            diaChiGiaoHang: "Địa chỉ ",
+        };
+        let tongTien = thongTinDonHang.sanPham1.giaTien * thongTinDonHang.sanPham1.soLuong
+            + thongTinDonHang.sanPham2.giaTien * thongTinDonHang.sanPham2.soLuong
+            + thongTinDonHang.sanPham3.giaTien * thongTinDonHang.sanPham3.soLuong;
+        document.writeln("Tổng Tiền Đơn Hàng: " + tongTien + "<br>");
+        document.writeln("Độ dài : " + thongTinDonHang.maDonHang.length + "<br>");
+
+
+        var myString = "Hello Kiên";
+        document.writeln(myString[3] + "<br>");
+        document.writeln(myString.slice(1,4) + "<br>");
+        //thay thế
+        document.writeln(myString.replace("Hello", "Hi") + "<br>");
+        //thường hết hoặc hoa hết
+        document.writeln(myString.toLowerCase() + "<br>" );
+        //tìm kí tự trả vị trí
+        document.writeln(myString.indexOf('e') + "<br>");
+        // có trả true , 0 trả false
+        document.writeln(myString.includes('m') + "<br>");
+        //tách chuổi thành mảng
+        document.writeln(myString.split('')+ "<br>");
+
+        let danhSach = ["Phạm Tiệp A", "Nguyễn Tiến B", "Lương Ngọc B"]
+        document.writeln(danhSach[1].startsWith("Nguyễn") + "<br>");
+
+        // let so = "123";
+        // document.writeln(typeof (so));
+        // document.writeln();
+
+        // parseInt("10.5");  //10
+        // parseFloat("10.5"); //10.5
+
+        // var pi = 3.14159;
+        // pi.toFixed(2);
+        // // NaN kiểm tra có là số
+        // //Finite kiểm tra có là số hữu hạn
+        // isNaN(NaN); //true
+        // isFinite(10); // true
+
+        let toDay = new Date();
+        document.writeln(toDay.getMonth);
+
+
+
+    </script>
+</body>
+
+</html>
